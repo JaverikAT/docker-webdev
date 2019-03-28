@@ -21,4 +21,6 @@ RUN apt-get update \
  && ln -s /usr/bin/xvfb-chromium /usr/bin/chromium-browser \
  && ln -s /usr/lib/x86_64-linux-gnu/libOSMesa.so.6 /opt/google/chrome/libosmesa.so
 
+RUN npm install -g npm-install-peers
 USER $USER_ID
+CMD "/bin/bash"
